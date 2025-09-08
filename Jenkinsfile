@@ -1,4 +1,4 @@
-pipeline {
+'pipeline {
     agent any
 
     stages {
@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Compile') {
             steps {
-            bat 'javac HelloWorld.java
+            bat 'javac HelloWorld.java'
             }
         }
     stages {   
