@@ -1,7 +1,7 @@
 pipeline {
     agent any
 
-      stages {
+    stages {
         stage('Clone') {
             steps {
             git branch: 'main', credentialsId: 'c5263df8-8cad-4cad-abcd-c42ac838a345', url: 'https://github.com/Sadichha2611/sadichha26.git'
@@ -13,9 +13,10 @@ pipeline {
             bat 'javac HelloWorld.java
             }
         }
-           stage('Run') {
+    stages {   
+        stage('Run') {
             steps {
-               bat 'java HelloWorld'
+            bat 'java HelloWorld'
             }
         }
     }
